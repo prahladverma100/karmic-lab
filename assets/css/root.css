@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --fs_xsm: 10px;
+    --fs_sm: 20px;
+    --fs_md: 23px;
+    --fs_xl: 25px;
+
+
+    /* font-weight */
+    --fw_300: 300;
+    --fw_400: 400;
+    --fw_500: 500;
+    --fw_600: 600;
+    --fw_700: 700;
+
+
+
+    /* color */
+
+    --white: #FFFFFF;
+    --bg_white: #FFFFFF;
+    --black: #040404;
+    --greay: #B4B4B4;
+
+
+}
+
+/* font-weight */
+.fw_300 {
+    font-weight: var(--fw_300);
+}
+
+.fw_400 {
+    font-weight: var(--fw_400);
+}
+
+.fw_500 {
+    font-weight: var(--fw_500);
+}
+
+.fw_600 {
+    font-weight: var(--fw_600);
+}
+
+.fw_700 {
+    font-weight: var(--fw_700);
+}
+
+
+/* font_size */
+
+.fs_xsm {
+    font-size: var(--fs_xsm);
+
+}
+
+.fs_sm {
+    font-size: var(--fs_sm);
+
+}
+
+.fs_md {
+    font-size: var(--fs_md);
+
+}
+
+.fs_xl {
+    font-size: var(--fs_xl);
+
+}
+
+/* color */
+.white {
+    color: var(--white) !important;
+}
+
+.black {
+    color: var(--black);
+}
+
+.bg_white {
+    background-color: var(--bg_white);
+}
+
+.greay {
+    color: var(--greay);
+}
+
+
+/* font-family */
+.ff_sunflower {
+    font-family: 'Sunflower';
+}
+
+.ff_Grotesk {
+    font-family: 'Space Grotesk';
+}
+
+
+
+
+
+
+@media (min-width:576px) {
+    :root {
+        --fs_xsm: 16px;
+        --fs_sm: 20px;
+        --fs_md: 31px;
+        --fs_xl: 38px;
+
+    }
+
+}
+
+@media (min-width:768px) {
+    :root {
+        --fs_xsm: 16px;
+        --fs_sm: 20px;
+        --fs_md: 56px;
+        --fs_xl: 56px;
+
+    }
+
+}
+
+@media (min-width:992px) {
+    :root {
+        --fs_xsm: 16px;
+        --fs_sm: 20px;
+        --fs_md: 56px;
+        --fs_xl: 64px;
+
+    }
+
+}
+
+ 
+@media (min-width:1400px) {
+    :root {
+        --fs_xsm: 16px;
+        --fs_sm: 20px;
+        --fs_md: 56px;
+        --fs_xl: 74px;
+
+    }
+
+} 
