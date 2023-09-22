@@ -15,6 +15,27 @@
     z-index: -2;
 }
 
+.navline::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    background-color: #FFF;
+    left: 0;
+    transition: all 300ms;
+
+
+}
+
+.hover {
+    background-color: ;
+}
+
+.navline:hover::after {
+    width: 100%;
+}
+
 .gap-40 {
     gap: 40px;
 }
@@ -25,13 +46,23 @@
     border: none;
 }
 
-.border_raidsh2 {
+.border_radius2 {
     border-radius: 82px;
     padding: 12px 32px 12px 32px;
     border: 1px solid #FFF;
+    background-color: transparent;
+
 
 
 }
+
+.border_radius2:hover {
+    background-color: white;
+    color: #000 !important;
+
+}
+
+
 
 .btn_radish {
     border-radius: 82px;
@@ -322,9 +353,11 @@
 }
 
 .box-hover:hover {
-    transform: scale(1.4);
+
+    transform: scale(1);
     transition: all 500ms;
-    z-index: 1;
+
+
 }
 
 .arrow-hero {
@@ -365,6 +398,20 @@
     pointer-events: none;
 }
 
+.btn_hov {
+    background-color: transparent;
+    border-radius: 82px;
+    padding: 12px 32px 12px 32px;
+    border: 1px solid black;
+
+
+}
+
+.btn_hov:hover {
+    background-color: #040404;
+    color: #FFF;
+}
+
 .cards:hover .circle_cards {
     opacity: 1;
 }
@@ -374,9 +421,7 @@
     cursor: pointer;
 }
 
-.cards1:hover svg path {
-    fill: chocolate;
-}
+
 
 .bg_white {
     background-color: #ffffff;
@@ -387,11 +432,11 @@
 }
 
 .icon:hover svg rect {
-    fill: ;
+    fill: blue;
 }
 
 .icon:hover svg path {
-    fill: black;
+    fill: white;
 }
 
 .width {
@@ -410,10 +455,10 @@
         background-color: black !important;
         width: 100% !important;
         /* height: 100% !important; */
-        z-index: 1 !important;
+        z-index: 5 !important;
         transition: 800ms;
         min-height: 100vh;
-        gap: 50px !important;
+        gap: 20px !important;
     }
 
     label[for="checkbox"] {
@@ -422,6 +467,8 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        z-index: 6 !important;
+
     }
 
     label[for="checkbox"]>span {
@@ -429,6 +476,7 @@
         width: 38px;
         border-radius: 40px;
         background-color: #ffffff !important;
+
     }
 
     .rotates1 {
@@ -453,11 +501,14 @@
 }
 
 @media (min-width:576px) {
+
+
     .border_raidsh {
         border-radius: 82px;
         padding: 12px 32px 12px 32px;
         border: none;
     }
+
     .pt123 {
         padding-top: 50px;
     }
@@ -742,5 +793,15 @@
         bottom: -76%;
         z-index: -3;
         display: block;
+    }
+
+    .back-img {
+        background-size: 100% 100%;
+    }
+
+    .box-hover:hover {
+        transform: scale(1.4);
+        transition: all 500ms;
+        z-index: 1;
     }
 }
