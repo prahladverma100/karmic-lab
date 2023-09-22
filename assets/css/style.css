@@ -20,12 +20,18 @@
     position: absolute;
     height: 2px;
     width: 0;
-    bottom: 0;
+    bottom: -2px;
     background-color: #FFF;
     left: 0;
     transition: all 300ms;
 
 
+}
+
+.navline:hover {
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: #fff;
+    transition: all 300ms linear;
 }
 
 .hover {
@@ -42,7 +48,7 @@
 
 .border_raidsh {
     border-radius: 82px;
-    padding: 12px 25px 12px 25px;
+    padding: 10px 15px 10px 15px;
     border: none;
 }
 
@@ -72,13 +78,13 @@
 
 }
 
-/* {
+.border_raidsh2 {
     border-radius: 82px;
-    padding: 12px 32px 12px 32px;
+    padding: 10px 25px 10px 25px;
     border: 1px solid #FFF;
 
 
-} */
+}
 
 .bg-img {
     background-image: url('../image/bg_img.png');
@@ -626,7 +632,7 @@
         content: '';
         height: 1px;
         background-color: #ffffff;
-        width: 148.275px;
+        width: 105.275px;
         left: 15%;
         top: -1px;
 
@@ -641,7 +647,7 @@
         content: '';
         height: 1px;
         background-color: #ffffff;
-        width: 148.275px;
+        width: 105.275px;
         bottom: -1px;
         right: 1%;
 
